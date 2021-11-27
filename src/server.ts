@@ -99,7 +99,7 @@ app.get("/digipet/feed", (req, res) => {
   if (getDigipet()) {
     feedDigipet();
     res.json({
-      description: "You fed your digipet. It seems more disciplined now!",
+      description: "You fed your digipet. It seems less disciplined now!",
       digipet: getDigipet(),
     });
   } else {
